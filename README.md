@@ -44,7 +44,7 @@ py4j.protocol.Py4JJavaError: An error occurred while calling o321.load.
 : java.lang.ClassNotFoundException: org.postgresql.Driver
 ```
 
-Solution: The reason for this issue is, the JVM is unable to locate the class ```orr.postgresql.Driver```, which means 
+Solution: The reason for this issue is, the JVM is unable to locate the class ```org.postgresql.Driver```, which means 
 it is simply unable to locate the `.jar` file where the class is mentioned.
 
 
