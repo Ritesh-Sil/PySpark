@@ -11,7 +11,7 @@ Key Point : PySpark main driver program
 ```
 spark = SparkSession.builder.master('local[1]/yarn').appName('<App name>').getOrCreate()
 ```
-- For the master `local` is used for the standalone mode.Number inside the `[x]` means the number of CPU used for execution.
+- For the master `local` is used for the standalone mode.Number inside the `[x]` means the number of partitions to be created.
 - To run the PySpark application in a hadoop cluster the master will be `yarn`, if we choose yarn as a resource manager.
 - To run the PySpark application to read the tables from hive, we can use `enableHiveSupport()` option in the driver program.
 
